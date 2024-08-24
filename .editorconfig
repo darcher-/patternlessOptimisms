@@ -1,0 +1,33 @@
+root = false
+
+[*]
+end_of_line = auto
+insert_final_newline = unset
+
+[*.{css,html,js,json,md,svg}]
+charset = utf-8
+tab_width = 2
+indent_size = 2
+indent_style = unset
+end_of_line = lf
+max_line_length = unset
+trim_trailing_whitespace = unset
+insert_final_newline = false
+
+[*.{css,html,js,json,svg}]
+trim_trailing_whitespace = true
+
+[*.{html,js,md,svg}]
+indent_style = space
+
+[*.{css,json}]
+indent_style = tab
+
+[*.{css,js}]
+max_line_length = 80
+
+[*.{html,json,svg}]
+max_line_length = 120
+
+[*.md]
+max_line_length = 240

@@ -1,0 +1,13 @@
+{
+	"background_color": "rgb(31 24 78)",
+	"display": "fullscreen",
+	"icons": [
+		{
+			"sizes": "512x512",
+			"src": "google-touch-icon.png"
+		}
+	],
+	"name": "Patternless Optimisim",
+	"short_name": "pat+opt",
+	"theme_color": "rgb(240 160 30)"
+}

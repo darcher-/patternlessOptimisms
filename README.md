@@ -42,3 +42,4 @@ My strategy, as of right now, is to create a story instead of fixating on code, 
 - [Known Issues](https://github.com/darcher-/patternlessOptimisms/issues)
 - [Project Planning](https://github.com/users/darcher-/projects/8)
 - [Codespace Editor](https://laughing-yodel-g4xw997964cw776.github.dev/)
+- [Discussion Topics](https://github.com/darcher-/patternlessOptimisms/discussions/9)

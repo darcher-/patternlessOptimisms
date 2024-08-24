@@ -35,3 +35,8 @@ My strategy, as of right now, is to create a story instead of fixating on code, 
 - I intend to document the entire process to showcase why I am doing what I'm doing and want to also mention to anyone that stumbles upon this repository to get involved if they want to, offer insight, add suggestions, or even just share areas you may want to revisit and improve.
 
 > More to come&hellip;
+
+#### Resources
+
+- [Wiki Documentation](https://github.com/darcher-/patternlessOptimisms/wiki)
+- [Site Planning](https://github.com/users/darcher-/projects/8)

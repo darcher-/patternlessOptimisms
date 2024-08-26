@@ -1,0 +1,8 @@
+<svg width="16" height="16" aria-label="External link indicator"
+    focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
+    stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+    fill="none" viewBox="0 0 24 24"
+    style="margin-inline-start: 3px; margin-inline-end: -1px; margin-block-end: -3.5px">
+    <path
+        d="M10 5H8.2c-1.1 0-1.7 0-2.1.2a2 2 0 0 0-.9.9C5 6.5 5 7 5 8.2v7.6c0 1.1 0 1.7.2 2.1.2.4.5.7.9.9.4.2 1 .2 2.1.2h7.6c1.1 0 1.7 0 2.1-.2.4-.2.7-.5.9-.9.2-.4.2-1 .2-2.1V14m1-5V4m0 0h-5m5 0-7 7" />
+</svg>

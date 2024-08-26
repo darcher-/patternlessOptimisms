@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="Demo" name="description" />
+        <meta content="index, follow" name="robots" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="rgb(31 24 78)" name="msapplication-TileColor" />
+        <meta content="rgb(240 160 30)" name="theme-color" />
+        <meta content="dark light" name="color-scheme" />
+
+        <title>Actions | Patternless Optimism</title>
+
+        <link href="../../favicon.svg" rel="icon" />
+        <link href="../../apple-touch-icon.png" rel="apple-touch-icon" />
+        <link color="#880066" href="../../mask-icon.svg" rel="mask-icon" />
+        <link href="../../sitemap.xml" rel="sitemap" title="Site Map" />
+        <link href="../../manifest.json" rel="manifest" />
+        <link href="../../styles.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+
+    <body role="document">
+        <div role="application" id="root">
+            <header role="banner">
+                <h1>
+                    Actions Demo
+                </h1>
+                <p>
+                    Example <strong>actions</strong> showcasing groups of <code>button</code>, <code>anchor</code>,
+                    <code>input</code>, <code>link</code> elements
+                    that supports <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2 and other <abbr
+                          title="Accessibility">A11y</abbr> techniques, such as: keyboard navigation shortcut keys,
+                    screen reader labels.
+                </p>
+            </header>
+
+            <main>
+                <form>
+                    <fieldset>
+                        <legend>Press one of the following actions</legend>
+                        <div aria-label="Button action element examples" role="group">
+                            <button title="Generic action" name="generic">Generic</button>
+                            <button title="Clear form values" type="reset">Reset</button>
+                            <button title="Post form data" type="submit">Submit</button>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Activate one of the following actions</legend>
+                        <div aria-label="Input action element examples" role="group">
+                            <input value="Input button"
+                                   type="button"
+                                   title="Basic action"
+                                   aria-hidden="false"
+                                   hidden />
+                            <label for="radio-button-group">
+                                <input value="Checkbox action"
+                                       type="checkbox"
+                                       title="Invisible toggle"
+                                       aria-hidden="false"
+                                       hidden />Toggle action
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Select one of the following actions</legend>
+                        <div aria-label="Select action element examples" role="group">
+                            <label for="select-action">My favorit fruit</label>
+                            <select title="Select action" name="select" id="select-action">
+                                <option selected value>Undecided</option>
+                                <option value="0">Apples</option>
+                                <option value="1">Bananas</option>
+                                <option value="2">Pears</option>
+                                <option value="3">Tomatos</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Make a choice from the action below</legend>
+                        <div id="choice-group" role="radiogroup">
+                            <label for="option-a">
+                                <input value="0"
+                                       type="radio"
+                                       title="Invisible action"
+                                       name="hoice"
+                                       id="option-a"
+                                       aria-hidden="false"
+                                       hidden />Option A
+                            </label><br />
+                            <label for="option-b">
+                                <input value="1"
+                                       type="radio"
+                                       title="Invisible action"
+                                       name="choice"
+                                       id="option-b"
+                                       aria-hidden="false"
+                                       hidden />Option B
+                            </label>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <nav>
+                    <dl>
+                        <dt>Routing group</dt>
+                        <dd>
+                            <div role="group">
+                                <a href="#reference"
+                                   target="_self"
+                                   role="button"
+                                   rel="nofollow"
+                                   referrerpolicy="origin">Anchor
+                                </a><br />
+
+                                <a href="/document.pdf"
+                                   target="_top"
+                                   download
+                                   role="button"
+                                   rel="nofollow noreferrer"
+                                   referrerpolicy="same-origin">Download
+                                </a><br />
+
+                                <a href="mailto:name@domain.co"
+                                   target="_unfencedTop"
+                                   role="button"
+                                   rel="nofollow noreferrer noopener"
+                                   referrerpolicy="strict-origin">Email
+                                </a><br />
+
+                                <a href="tel:+17339687666"
+                                   target="_unfencedTop"
+                                   role="button"
+                                   rel="nofollow noreferrer noopener"
+                                   referrerpolicy="strict-origin">Phone
+                                </a><br />
+
+                                <a href="//google.com"
+                                   target="_blank"
+                                   role="link"
+                                   rel="noreferrer noopener"
+                                   referrerpolicy="no-referrer"
+                                   crossorigin="anonymous">Link
+                                </a><br />
+                            </div>
+                        </dd>
+                    </dl>
+                </nav>
+            </main>
+        </div>
+        <script src="scripts.js" type="module"></script>
+    </body>
+
+</html>

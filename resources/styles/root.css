@@ -1,0 +1,64 @@
+:where(:not(:is(html, iframe, canvas, img, svg, video, audio, :has(svg, symbol):not(:empty) :is(svg, symbol) *))) {
+    all: unset;
+    display: var(--display, revert);
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    margin: unset;
+}
+
+html:focus-within {
+    @media (prefers-reduced-motion) {
+        scroll-behavior: auto;
+    }
+
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    margin: 0;
+}
+
+html:not(:has([role="application"])) [role="document"],
+body[role="application"] {
+    isolation: isolate;
+}
+
+:defined {
+    display: block;
+}
+
+:not(:enabled),
+:disabled {
+    pointer-events: none;
+    user-select: none;
+}
+
+[inert],
+:not(:defined) {
+    display: none;
+}
+
+:not([hidden]),
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:not([hidden]),
+::backdrop,
+::before,
+::marker,
+::after {
+    @media (prefers-reduced-motion) {
+        animation-iteration-count: 1 !important;
+        transition-duration: 96ms !important;
+        animation-duration: 96ms !important;
+    }
+}

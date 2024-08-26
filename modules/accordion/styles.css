@@ -1,0 +1,77 @@
+tt-accordion {
+    display: block;
+    background: Canvas;
+    font-family: system-ui, sans-serif;
+    color: CanvasText;
+    padding-inline: 1rem;
+    padding-block: 1em;
+    max-inline-size: 480px;
+
+    details {
+        position: relative;
+        transition: all 0.16s ease-in-out;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            block-size: calc(100% + 2em);
+            inline-size: calc(100% + 2rem);
+            left: -1em;
+            top: -1em;
+            background: #cde;
+            z-index: -1;
+        }
+
+        summary {
+            display: flex;
+            flex-wrap: nowrap;
+            place-items: center;
+            place-content: space-between;
+            padding-inline: 1rem;
+            padding-block: 0.72em;
+            margin-inline: -1rem;
+            margin-block: 0;
+            color: inherit;
+
+            &::marker {
+                content: none;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            svg {
+                block-size: 1.5rem;
+                aspect-ratio: 1 / 1;
+                transition: all 0.28s linear;
+            }
+        }
+
+        &:is([open]) {
+            padding-block-end: 1em;
+            box-shadow: inset 0 -3px 1px -1px #222;
+
+            summary {
+                background: rgb(0 0 0 / 0.05);
+
+                svg {
+                    transform: scaleY(1) rotate(-90deg);
+                    fill: currentColor;
+                }
+            }
+        }
+
+        &:not([open]) {
+            summary {
+                background: rgb(0 0 0 / 0.125);
+
+                svg {
+                    transform: scaleY(-1);
+                    fill: none;
+                }
+            }
+        }
+    }
+}

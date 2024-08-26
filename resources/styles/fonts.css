@@ -1,0 +1,35 @@
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+p {
+    overflow-wrap: break-word;
+}
+
+dd,
+dt,
+li {
+    overflow-wrap: break-word;
+}
+
+legend,
+label,
+h4,
+h3,
+h2,
+h1,
+dt {
+    text-wrap: balance;
+}
+
+pre {
+    all: revert;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: orange;
+    color: #111e;
+}

@@ -1,0 +1,8 @@
+ul,
+ol {
+    list-style: none;
+}
+
+ol {
+    counter-reset: revert;
+}

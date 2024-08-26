@@ -1,0 +1,44 @@
+[contenteditable]:not(:is([contenteditable="false" i], [readonly], [read-only])) {
+    -webkit-line-break: after-white-space;
+    -webkit-user-modify: read-write;
+    line-break: after-white-space;
+    -moz-user-modify: read-write;
+    -webkit-user-select: auto;
+    overflow-wrap: break-word;
+}
+
+:spelling-error:where([contenteditable]:not([contenteditable="false" i]),
+    textarea, input):not(:is([readonly], [read-only])) {
+    text-decoration: underline wavy red;
+}
+
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+progress:intermediate {
+    appearance: indeterminate;
+}
+
+textarea {
+    -webkit-user-select: auto;
+    white-space: revert;
+}
+
+textarea:not([rows]) {
+    min-block-size: 9.6em;
+}
+
+::placeholder {
+    color: unset;
+}
+
+::placeholder-shown {
+    color: #abc8;
+}
+
+:disabled {
+    cursor: not-allowed;
+    user-select: none;
+}

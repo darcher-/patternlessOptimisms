@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="Demo" name="description" />
+        <meta content="index, follow" name="robots" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="rgb(31 24 78)" name="msapplication-TileColor" />
+        <meta content="rgb(240 160 30)" name="theme-color" />
+        <meta content="dark light" name="color-scheme" />
+
+        <title>Popover | Patternless Optimism</title>
+
+        <link href="../../favicon.svg" rel="icon" />
+        <link href="../../apple-touch-icon.png" rel="apple-touch-icon" />
+        <link color="#880066" href="../../mask-icon.svg" rel="mask-icon" />
+        <link href="../../sitemap.xml" rel="sitemap" title="Site Map" />
+        <link href="../../manifest.json" rel="manifest" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+
+    <body role="document">
+        <div role="application" id="root">
+            <button title="Press to open popover" aria-haspopup="true" popovertarget="popup">Open</button>
+            <div role="note" popover id="popup">
+                <h4>Popover heading</h4>
+                <p>This is the popover content</p>
+            </div>
+        </div>
+        <script src="scripts.js" type="module"></script>
+    </body>
+
+</html>

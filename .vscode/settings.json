@@ -1,0 +1,332 @@
+//!.vscode/settings
+{
+	//? Language: Format presets
+	"[css]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "always",
+			"source.sortImports": "always",
+			"source.fixAll": "explicit",
+		},
+		"editor.defaultFormatter": "vscode.css-language-features",
+	},
+	"[html]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.axe-linter": "always",
+			"source.fixAll": "explicit"
+		},
+		"editor.defaultFormatter": "vscode.html-language-features",
+	},
+	"[javascript]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "always",
+			"source.sortImports": "always",
+			"source.fixAll": "explicit"
+		},
+		"editor.defaultFormatter": "vscode.typescript-language-features",
+	},
+	"[json]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.sort-json": "always",
+			"source.fixAll": "explicit",
+		},
+		"editor.defaultFormatter": "vscode.json-language-features",
+	},
+	"[markdown]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "explicit"
+		},
+		"editor.defaultFormatter": "vscode.markdown-language-features",
+	},
+	"[svg]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.jock.svg": "explicit"
+		},
+		"editor.defaultFormatter": "redhat.vscode-xml",
+	},
+
+	//? Extension: color-manager presets
+	"color-manager.autoStartIntellisense": true,
+	"color-manager.contextMenu": {
+		"edit": true,
+		"findColors": true,
+		"openPalette": true,
+		"openPicker": true
+	},
+
+	//? Language: Cascading Stylesheets (CSS) presets
+	"css.completion.completePropertyWithSemicolon": true,
+	"css.completion.triggerPropertyValueCompletion": true,
+	"css.format.braceStyle": "collapse",
+	"css.format.enable": true,
+	"css.format.maxPreserveNewLines": 2,
+	"css.format.newlineBetweenRules": true,
+	"css.format.newlineBetweenSelectors": true,
+	"css.format.preserveNewLines": true,
+	"css.format.spaceAroundSelectorSeparator": true,
+	"css.hover.documentation": true,
+	"css.hover.references": true,
+	"css.lint.argumentsInColorFunction": "error",
+	"css.lint.boxModel": "ignore",
+	"css.lint.compatibleVendorPrefixes": "ignore",
+	"css.lint.duplicateProperties": "ignore",
+	"css.lint.emptyRules": "warning",
+	"css.lint.float": "ignore",
+	"css.lint.fontFaceProperties": "warning",
+	"css.lint.hexColorLength": "error",
+	"css.lint.idSelector": "ignore",
+	"css.lint.ieHack": "ignore",
+	"css.lint.importStatement": "ignore",
+	"css.lint.important": "ignore",
+	"css.lint.propertyIgnoredDueToDisplay": "warning",
+	"css.lint.universalSelector": "ignore",
+	"css.lint.unknownAtRules": "warning",
+	"css.lint.unknownProperties": "warning",
+	"css.lint.unknownVendorSpecificProperties": "ignore",
+	"css.lint.validProperties": [
+		"padding-block-start",
+		"margin-block-start",
+		"padding-block-end",
+		"margin-block-end",
+		"max-inline-size",
+		"min-inline-size",
+		"max-block-size",
+		"min-block-size",
+		"padding-block",
+		"margin-block",
+		"inline-size",
+		"will-change",
+		"block-size"
+	],
+	"css.lint.vendorPrefix": "warning",
+	"css.lint.zeroUnits": "ignore",
+	"css.trace.server": "verbose",
+	"css.validate": true,
+
+	//? Debug: JavaScript presets
+	"debug.javascript.autoAttachFilter": "smart",
+	"debug.javascript.autoAttachSmartPattern": [
+		"${workspaceFolder}/**",
+		"!**/node_modules/**",
+		"**/$KNOWN_TOOLS$/**"
+	],
+	"debug.javascript.automaticallyTunnelRemoteServer": true,
+	"debug.javascript.breakOnConditionalError": false,
+	"debug.javascript.codelens.npmScripts": "all",
+	"debug.javascript.debugByLinkOptions": "on",
+	"debug.javascript.defaultRuntimeExecutable": {
+		"pwa-chrome": "chrome",
+		"pwa-msedge": "msedge",
+		"pwa-node": "node"
+	},
+	"debug.javascript.pickAndAttachOptions": {
+		"autoAttach": "on",
+		"pickAndAttach": "on"
+	},
+	"debug.javascript.resourceRequestOptions": {
+		"followRedirects": true
+	},
+	"debug.javascript.terminalOptions": {
+		"env": {
+			"NODE_NO_READLINE": "1"
+		}
+	},
+	"debug.javascript.unmapMissingSources": true,
+
+	//? Editor: Action presets
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "never",
+		"source.organizeImports": "never",
+		"source.organizeLinkDefinitions": "never",
+		"source.removeUnused": "never",
+		"source.sortImports": "never"
+	},
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"editor.wordWrap": "on",
+
+	//? Explorer: Sidebar file and folder tree
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.expand": false,
+	"explorer.fileNesting.patterns": {
+		"*": "${capture}.*, ${basename}.*, *.${extname}, ${dirname}/${capture}.*, ${dirname}/${basename}.*, ${dirname}/*.${extname}"
+	},
+
+	//? Files: Automatic file format extension conversions
+	"files.associations": {
+		"*.{editorconfig}": "ini",
+		"*.{env,git*,npmrc}": "properties",
+		"*.{json,json5}": "jsonc"
+	},
+
+	//? Extension: FixJSON presets
+	"fixJson.indentationSpaces": 2,
+
+	//? Language: HyperText Markup (HTML) presets
+	"html.autoClosingTags": true,
+	"html.autoCreateQuotes": true,
+	"html.completion.attributeDefaultValue": "empty",
+	"html.format.contentUnformatted": "pre,code,textarea",
+	"html.format.enable": true,
+	"html.format.extraLiners": "head, body, /html",
+	"html.format.indentHandlebars": true,
+	"html.format.indentInnerHtml": true,
+	"html.format.maxPreserveNewLines": 2,
+	"html.format.preserveNewLines": true,
+	"html.format.templating": true,
+	"html.format.unformatted": "wbr",
+	"html.format.unformattedContentDelimiter": "",
+	"html.format.wrapAttributes": "preserve-aligned",
+	"html.format.wrapAttributesIndentSize": 2,
+	"html.format.wrapLineLength": 120,
+	"html.hover.documentation": true,
+	"html.hover.references": true,
+	"html.suggest.html5": true,
+	"html.trace.server": "verbose",
+	"html.validate.scripts": true,
+	"html.validate.styles": true,
+
+	//? Language: JavaScript (JS) presets
+	"javascript.autoClosingTags": true,
+	"javascript.experimental.updateImportsOnPaste": true,
+	"javascript.format.enable": true,
+	"javascript.format.insertSpaceAfterCommaDelimiter": true,
+	"javascript.format.insertSpaceAfterConstructor": true,
+	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+	"javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+	"javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+	"javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+	"javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+	"javascript.format.semicolons": "remove",
+	"javascript.inlayHints.enumMemberValues.enabled": false,
+	"javascript.inlayHints.functionLikeReturnTypes.enabled": false,
+	"javascript.inlayHints.parameterNames.enabled": "none",
+	"javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+	"javascript.inlayHints.parameterTypes.enabled": false,
+	"javascript.inlayHints.propertyDeclarationTypes.enabled": false,
+	"javascript.inlayHints.variableTypes.enabled": false,
+	"javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+	"javascript.preferGoToSourceDefinition": true,
+	"javascript.preferences.importModuleSpecifier": "project-relative",
+	"javascript.preferences.importModuleSpecifierEnding": "minimal",
+	"javascript.preferences.jsxAttributeCompletionStyle": "braces",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.preferences.renameMatchingJsxTags": true,
+	"javascript.preferences.useAliasesForRenames": true,
+	"javascript.referencesCodeLens.enabled": true,
+	"javascript.referencesCodeLens.showOnAllFunctions": true,
+	"javascript.suggest.autoImports": true,
+	"javascript.suggest.classMemberSnippets.enabled": true,
+	"javascript.suggest.completeFunctionCalls": true,
+	"javascript.suggest.completeJSDocs": true,
+	"javascript.suggest.enabled": true,
+	"javascript.suggest.includeAutomaticOptionalChainCompletions": true,
+	"javascript.suggest.includeCompletionsForImportStatements": true,
+	"javascript.suggest.jsdoc.generateReturns": true,
+	"javascript.suggest.names": true,
+	"javascript.suggest.paths": true,
+	"javascript.suggestionActions.enabled": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"javascript.validate.enable": true,
+
+	//? Language: Scripts JavaScript (JS) / TypeScript (TS) presets
+	"js/ts.implicitProjectConfig.checkJs": true,
+	"js/ts.implicitProjectConfig.experimentalDecorators": true,
+	"js/ts.implicitProjectConfig.module": "ESNext",
+	"js/ts.implicitProjectConfig.strictFunctionTypes": true,
+	"js/ts.implicitProjectConfig.strictNullChecks": true,
+	"js/ts.implicitProjectConfig.target": "ES2022",
+
+	//? Language: JavaScript Object Notation (JSON) presets
+	"json.format.enable": true,
+	"json.format.keepLines": true,
+	"json.indent": "2",
+	"json.maxItemsComputed": 9999,
+	"json.primitiveType": "parse",
+	"json.schemaDownload.enable": true,
+	"json.trace.server": "verbose",
+	"json.validate.enable": true,
+
+	//? Language: Scalable Vector Graphics presets
+	"svg.completion.emmet": false,
+	"svg.completion.showAdvanced": true,
+	"svg.completion.showDeprecated": true,
+	"svg.minify.addAttributesToSVGElement": true,
+	"svg.minify.addClassesToSVGElement": true,
+	"svg.minify.cleanupAttrs": true,
+	"svg.minify.cleanupEnableBackground": true,
+	"svg.minify.cleanupIDs": true,
+	"svg.minify.cleanupListOfValues": true,
+	"svg.minify.cleanupNumericValues": true,
+	"svg.minify.collapseGroups": true,
+	"svg.minify.convertColors": true,
+	"svg.minify.convertEllipseToCircle": true,
+	"svg.minify.convertPathData": true,
+	"svg.minify.convertShapeToPath": true,
+	"svg.minify.convertStyleToAttrs": true,
+	"svg.minify.convertTransform": true,
+	"svg.minify.inlineStyles": true,
+	"svg.minify.mergePaths": true,
+	"svg.minify.minifyStyles": true,
+	"svg.minify.moveElemsAttrsToGroup": true,
+	"svg.minify.moveGroupAttrsToElems": true,
+	"svg.minify.prefixIds": true,
+	"svg.minify.removeAttributesBySelector": false,
+	"svg.minify.removeAttrs": false,
+	"svg.minify.removeComments": true,
+	"svg.minify.removeDesc": true,
+	"svg.minify.removeDimensions": false,
+	"svg.minify.removeDoctype": true,
+	"svg.minify.removeEditorsNSData": true,
+	"svg.minify.removeElementsByAttr": false,
+	"svg.minify.removeEmptyAttrs": true,
+	"svg.minify.removeEmptyContainers": true,
+	"svg.minify.removeEmptyText": true,
+	"svg.minify.removeHiddenElems": true,
+	"svg.minify.removeMetadata": true,
+	"svg.minify.removeNonInheritableGroupAttrs": true,
+	"svg.minify.removeOffCanvasPaths": false,
+	"svg.minify.removeRasterImages": false,
+	"svg.minify.removeScriptElement": false,
+	"svg.minify.removeStyleElement": false,
+	"svg.minify.removeTitle": true,
+	"svg.minify.removeUnknownsAndDefaults": true,
+	"svg.minify.removeUnusedNS": true,
+	"svg.minify.removeUselessDefs": true,
+	"svg.minify.removeUselessStrokeAndFill": true,
+	"svg.minify.removeViewBox": false,
+	"svg.minify.removeXMLNS": false,
+	"svg.minify.removeXMLProcInst": true,
+	"svg.minify.reusePaths": false,
+	"svg.minify.sortAttrs": true,
+	"svg.minify.sortDefsChildren": true,
+	"svg.pathDataHighlight": true,
+	"svg.preview.autoFit": true,
+	"svg.preview.autoShow": true,
+	"svg.preview.background": "dark-transparent",
+	"svg.preview.backgroundCustom": "#eee",
+	"svg.preview.backgroundSaveTo": "NoSave",
+	"svg.preview.disable": false,
+	"svg.preview.mode": "svg",
+	"svg.preview.scaleZoom": 2,
+	"svg.preview.showCrossLine": true,
+	"svg.preview.showRuler": true,
+	"svg.preview.toolbarSize": "mini",
+	"svg.preview.translateExternalAddress": true,
+	"svg.preview.viewMode": "oneByOne",
+
+	//? Workbench: Theme presets
+	"workbench.productIconTheme": "material-product-icons",
+	"workbench.colorTheme": "Panda Syntax",
+	"workbench.iconTheme": "vs-seti"
+}

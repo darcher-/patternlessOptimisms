@@ -1,0 +1,40 @@
+[draggable] {
+    :where(:not([draggable="false" i])) {
+        -webkit-user-drag: element;
+    }
+}
+
+[type="checkbox" i],
+[type="radio" i] {
+    :where(:intermediate) {
+        appearance: indeterminate;
+    }
+}
+
+summary {
+    display: list-item;
+}
+
+select,
+button {
+    font: inherit;
+}
+
+button,
+a {
+    cursor: revert;
+}
+
+dialog:modal {
+    all: revert;
+    box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+    visibility: hidden;
+    display: none;
+}
+
+:target {
+    scroll-margin-block: 5ex;
+}

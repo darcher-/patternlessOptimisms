@@ -12,7 +12,7 @@ Industry standards do still provide value and are relevant for many teams strivi
 
 Package managers, Frameworks, Bundlers, Formatters, Linters, Preprocessors, Transpilers, TypeSafety, and so on are all great for their intent and have their place; however, they're the core reaason behind the complexity that has become the norm. Using all tools in an ecosystem passes ownership off but limits your ability to make informed decisions about what to use and when.
 
-- **Dependencies** have helpd steer us away from reinventing the wheel yet they also create security vulnerabilities and limit access to the latest features and optimizations because of lacking backwards compatibility and varied version support for the same library. A better approch is using third-party libraries to ramp up quickly for a Proof of concept so you can demo the intent of the effort, then building a solution to accommodate your needs in a lean, concise, and consistent way. The sheer bloat of dependencies is astronomical. 
+- **Dependencies** have helpd steer us away from reinventing the wheel yet they also create security vulnerabilities and limit access to the latest features and optimizations because of lacking backwards compatibility and varied version support for the same library. A better approch is using third-party libraries to ramp up quickly for a Proof of concept so you can demo the intent of the effort, then building a solution to accommodate your needs in a lean, concise, and consistent way. The sheer bloat of dependencies is astronomical.
 
 - **TypeSafety** may improve quality on your branch but it can be a double-edged sword that blocks progress and further complicating implementation stategies while attempting to scale or evolve features. I usually prefer JSDoc typing over TSC, but ultimately if you slow down and truly write sound logic, proper error handling, safe conditional logic to insure proper instance and type usage&mdash;these tools become much less important if you have a good grasp on the language fundamentals. Teach your team instead of layering in more tools!
 
@@ -39,4 +39,6 @@ My strategy, as of right now, is to create a story instead of fixating on code, 
 #### Resources
 
 - [Wiki Documentation](https://github.com/darcher-/patternlessOptimisms/wiki)
-- [Site Planning](https://github.com/users/darcher-/projects/8)
+- [Known Issues](https://github.com/darcher-/patternlessOptimisms/issues)
+- [Project Planning](https://github.com/users/darcher-/projects/8)
+- [Codespace Editor](https://laughing-yodel-g4xw997964cw776.github.dev/)

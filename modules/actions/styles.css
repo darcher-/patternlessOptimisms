@@ -1,0 +1,36 @@
+:where(button, [role="button" i], input:is([type="button" i], [type="submit" i], [type="reset" i])) {
+    appearance: button;
+    cursor: pointer;
+    user-select: none;
+}
+
+select {
+    appearance: select;
+    cursor: pointer;
+    user-select: none;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: inherit;
+
+    &:not([class]) {
+        text-decoration-skip-ink: auto;
+        color: currentColor;
+    }
+
+    &[disabled] {
+        /* TODO setup a wrapper to provide not-allowed cursor on hover */
+        display: inline-block;
+        pointer-events: none;
+        filter: grayscale(1);
+    }
+
+    &[download] {
+        text-decoration: underline;
+    }
+
+    &[role="button" i] {
+        display: inline-block;
+    }
+}

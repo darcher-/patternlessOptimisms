@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* universal */
+@import "design/root.css";
+@import "design/fonts.css";
+
+/* element */
+@import "design/actions.css";
+@import "design/embed.css";
+@import "design/media.css";
+@import "design/lists.css";
+@import "design/form.css";
+@import "design/util.css";

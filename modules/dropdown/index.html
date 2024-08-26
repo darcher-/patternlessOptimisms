@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="Demo" name="description" />
+        <meta content="index, follow" name="robots" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="rgb(31 24 78)" name="msapplication-TileColor" />
+        <meta content="rgb(240 160 30)" name="theme-color" />
+        <meta content="dark light" name="color-scheme" />
+
+        <title>Dropdown | Patternless Optimism</title>
+
+        <link href="../favicon.svg" rel="icon" />
+        <link href="../apple-touch-icon.png" rel="apple-touch-icon" />
+        <link color="#880066" href="../mask-icon.svg" rel="mask-icon" />
+        <link href="sitemap.xml" rel="sitemap" title="Site Map" />
+        <link href="../manifest.json" rel="manifest" />
+        <link href="styles.css" rel="stylesheet" />
+
+        <script defer src="extender.js" type="module"></script>
+    </head>
+
+    <body role="document">
+        <div role="application" id="root">
+
+            <tt-dropdown aria-label="Standalone dropdown">
+                <details>
+                    <summary>Dropdown Toggle</summary>
+                    <p>A code snippet <em>figure</em> just for placeholder content.</p>
+                    <figure>
+                        <code>
+                            <pre>
+const isEven = num => num % 2 === 0;
+
+const result = {
+	FALSE: isEven(1023),
+	TRUE: isEven(256)
+}
+
+console.info("output", { result })
+				            </pre>
+                        </code>
+                    </figure>
+                </details>
+            </tt-dropdown>
+
+        </div>
+
+        <script src="scripts.js" type="module"></script>
+    </body>
+
+</html>

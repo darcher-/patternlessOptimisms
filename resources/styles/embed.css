@@ -1,0 +1,27 @@
+img,
+svg,
+video,
+canvas,
+picture {
+    max-inline-size: 100%;
+    display: block;
+}
+
+img,
+svg,
+canvas,
+picture {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+img,
+svg {
+    vertical-align: text-bottom;
+    inline-size: max-content;
+    block-size: auto;
+}
+
+table {
+    border-collapse: collapse;
+}

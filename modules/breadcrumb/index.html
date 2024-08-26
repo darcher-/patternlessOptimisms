@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="Demo" name="description" />
+        <meta content="index, follow" name="robots" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="rgb(31 24 78)" name="msapplication-TileColor" />
+        <meta content="rgb(240 160 30)" name="theme-color" />
+        <meta content="dark light" name="color-scheme" />
+
+        <title>Actions | Patternless Optimism</title>
+
+        <link href="../../favicon.svg" rel="icon" />
+        <link href="../../apple-touch-icon.png" rel="apple-touch-icon" />
+        <link color="#880066" href="../../mask-icon.svg" rel="mask-icon" />
+        <link href="../../sitemap.xml" rel="sitemap" title="Site Map" />
+        <link href="../../manifest.json" rel="manifest" />
+        <link href="../../styles.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+
+    <body role="document">
+        <div role="application" id="root">
+            <nav class="breadcrumbs" role="navigation">
+                <a href="./home/">
+                    <span class="crumbicon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                            <use href="#icon-home" />
+                        </svg>
+                    </span>
+                    <span class="home-label">Home</span>
+                </a>
+
+                <span class="crumb-separator" aria-hidden="true">»</span>
+
+                <span class="crumb">
+                    <a aria-current="page">Page A</a>
+                    <span class="crumbicon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                            <use href="#icon-dropdown-arrow" />
+                        </svg>
+                        <select class="disguised-select" title="Navigate to another page">
+                            <option selected>Page A</option>
+                            <option>Page B</option>
+                            <option>Page C</option>
+                        </select>
+                    </span>
+                </span>
+            </nav>
+
+            <svg style="display: none;">
+
+                <symbol id="icon-home">
+                    <title>A home icon</title>
+                    <path
+                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </symbol>
+
+                <symbol id="icon-dropdown-arrow">
+                    <title>A down arrow</title>
+                    <path d="M19 9l-7 7-7-7" />
+                </symbol>
+
+            </svg>
+        </div>
+        <script src="scripts.js" type="module"></script>
+    </body>
+
+</html>

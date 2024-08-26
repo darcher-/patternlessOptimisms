@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="Demo" name="description" />
+        <meta content="index, follow" name="robots" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="rgb(31 24 78)" name="msapplication-TileColor" />
+        <meta content="rgb(240 160 30)" name="theme-color" />
+        <meta content="dark light" name="color-scheme" />
+
+        <title>Modal | Patternless Optimism</title>
+
+        <link href="../../favicon.svg" rel="icon" />
+        <link href="../../apple-touch-icon.png" rel="apple-touch-icon" />
+        <link color="#880066" href="../../mask-icon.svg" rel="mask-icon" />
+        <link href="../../sitemap.xml" rel="sitemap" title="Site Map" />
+        <link href="../../manifest.json" rel="manifest" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+
+    <body role="document">
+        <div role="application" id="root">
+            <div role="document">
+                <button id="dialog-open" role="button" type="button" aria-pressed="false" aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-controls="modal-dialog-reference">
+                    Open Modal
+                </button>
+            </div>
+            <span aria-hidden="true" role="alertdialog" aria-live="polite">
+                <dialog role="dialog" aria-modal="true" id="modal-dialog-reference">
+                    <div role="modal">
+                        <hgroup>
+                            <h3>Modal heading text</h3>
+                        </hgroup>
+
+                        <fieldset role="group">
+                            <legend>
+                                <span role="landmark">
+                                    <dl class="inline" role="definition" id="form-minimum-requirement-glossary">
+                                        <dt><abbr title="Required field"
+                                                  aria-describedby="form-minimum-requirement-glossary">*</abbr></dt>
+                                        <dd>
+                                            <p>Required field(s)</p>
+                                        </dd>
+                                    </dl>
+                                </span>
+                            </legend>
+
+                            <form id="form-identifying-tag" method="dialog"
+                                  aria-describedby="form-minimum-requirements-glossary">
+
+                                <span aria-labelledby="field-label-reference" id="input-association">
+                                    <dl>
+                                        <dt>
+                                            <label for="field-label-reference">
+                                                <span>Field label text</span>
+                                                <abbr title="Required field"
+                                                      aria-describedby="form-minimum-requirement-glossary">*</abbr>
+                                            </label>
+                                        </dt>
+                                        <dd>
+                                            <p aria-atomic="true" aria-relevant="additions text"
+                                               aria-label="Field specific notice messages" aria-live="polite"
+                                               role="note"></p>
+                                        </dd>
+                                        <dd>
+                                            <input aria-invalid="false" aria-describedby="input-association"
+                                                   data-interpolated="false" id="field-label-reference" pattern="\D{2,}"
+                                                   placeholder="e.g. Field placeholder text" type="text" required />
+                                        </dd>
+                                    </dl>
+                                </span>
+
+                                <span role="radiogroup" aria-labelledby="radio-group-label">
+                                    <dl>
+                                        <dt>
+                                            <span>Some precursor text describing a group of fields each of which have
+                                                their own
+                                                labelling yet are not isolated within a specified fieldset.</span>
+                                            <abbr title="Required field"
+                                                  aria-describedby="form-minimum-requirement-glossary">*</abbr>
+                                        </dt>
+                                        <dd>
+                                            <p aria-atomic="true" aria-relevant="additions removals text"
+                                               aria-label="Field specific notice messages" aria-live="polite"
+                                               role="note"></p>
+                                        </dd>
+                                        <dd>
+                                            <input role="radio" type="radio" value="a" id="radio-field-option-a"
+                                                   name="radio-group-reference">
+                                            <label for="radio-field-option-a">Yup, makes sense</label>
+                                        </dd>
+                                        <dd>
+                                            <input role="radio" type="radio" value="b" id="radio-field-option-b"
+                                                   name="radio-group-reference">
+                                            <label for="radio-field-option-b">Huh?</label>
+                                        </dd>
+                                    </dl>
+                                </span>
+                                <div role="group">
+                                    <button id="dialog-close" role="button" type="button" aria-label="Close modal"
+                                            aria-pressed="false" aria-controls="modal-dialog-reference">
+                                        Close
+                                    </button>
+                                    <button role="button" type="reset"
+                                            aria-controls="field-label-reference radio-group-reference">Reset</button>
+                                    <button role="button" type="submit"
+                                            aria-controls="field-label-reference radio-group-reference">Submit</button>
+                                </div>
+                            </form>
+                        </fieldset>
+                    </div>
+                </dialog>
+            </span>
+
+        </div>
+        <script src="scripts.js" type="module"></script>
+    </body>
+
+</html>
